@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+$primary-color: #f1ad0f;
+$bg-color: #ecf0f1;
+$text-color: #1e1e1e;
+$text-color2: #5d5d5d;
+$footer-color: #222;
+
+$desktop: 2560px;
+$laptopL: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobileL: 525px;
+$mobileS: 320px;
+
+@mixin transition-ease {
+  transition: 0.5s ease-in-out;
+}
+
+@mixin transition-ease-fast {
+  transition: 0.25s ease-in-out;
+}
+
+@mixin transition-ease-supersonic {
+  transition: 0.15s ease-in-out;
+}
+
+.invisible {
+  display: none;
+}

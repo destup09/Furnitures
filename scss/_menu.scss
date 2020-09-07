@@ -1,0 +1,52 @@
+.menu {
+  width: 100%;
+  height: 100px;
+  padding: 0 10% 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-color;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
+}
+
+.menu-ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 45px;
+}
+
+.menu-items {
+  width: 600px;
+  height: 45px;
+  font-size: 18px;
+  font-family: "Lato";
+}
+
+.menu-item {
+  list-style: none;
+  text-decoration: none;
+  color: $text-color;
+  @include transition-ease-fast;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.cart {
+  width: 100px;
+  height: 45px;
+  border: 1px solid black;
+}
+
+@media (max-width: $laptopL) {
+  .menu {
+    padding: 0 5% 0 5%;
+  }
+}
